@@ -104,6 +104,7 @@ class Bootstrap
      */
     public function canApplyPatch()
     {
+        return false; //not adding any patch to mage.php
         // check the config first
         if (!$this->getConfig()->mustApplyBootstrapPatch()) {
             $message = "<comment>Magento autoloader patching skipped because of configuration flag</comment>";
